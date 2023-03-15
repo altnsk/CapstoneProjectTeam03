@@ -56,19 +56,23 @@ public class Homepage {
     @FindBy (linkText = "Logout")
     public WebElement logout;
 
+    @FindBy (linkText = "Account Management")
+    public WebElement accountmanagement;
+
     public void login(){
 
         loginButton.click();
         username.sendKeys("group3@test.com");
-        password.sendKeys("1WVal0SlYWPd9uz");
+        password.sendKeys("1WVal0SlYWPd9uz.");
         signin.click();
     }
 
     public void logout(){
         user.click();
         logout.click();
-        
+
     }
+
 
 
 

@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ={ "."},
-        glue ="stepdefinitions"
+        features ={ "src/test/resources/features/"},
+        glue =""
 )
 public class Task_Runner {
 }
