@@ -15,6 +15,7 @@ public class US_11 {
     public void kullanici_siteye_loginn_olur() {
         Driver.getDriver().get("https://qa-gm3.quaspareparts.com/");
         hp.login();
+        ru.login2.click();
     }
 
     @When("Kullanici  Business Owner e tiklar")
@@ -44,7 +45,7 @@ public class US_11 {
     @When("Isim ve departman girer")
     public void isim_ve_departman_girer() {
         ru.save.click();
-        ru.name.sendKeys("alperen35");
+        ru.name.sendKeys("001010");
         ru.description.sendKeys("alperen35");
         ru.cubuk.click();
         ru.departmenttype.click();
@@ -56,6 +57,7 @@ public class US_11 {
     @Then("Kayit edildigini check eder")
     public void kayit_edildigini_check_eder() {
         hp.remoteUnits.click();
+        RemoteUnits.waitForClickabilty(ru.alperen35,5000);
         ru.alperen35.isDisplayed();
         System.out.println(ru.alperen35.getText());
 
