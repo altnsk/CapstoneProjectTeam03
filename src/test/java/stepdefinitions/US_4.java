@@ -6,14 +6,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.Homepage;
-import pages.US04_HomePage;
+import pages.US_4Page;
 import utilities.Driver;
 
 
-public class US04_StepDefinition {
+public class US_4 {
     WebDriver driver;
     Homepage us04=new Homepage(Driver.getDriver());
-    US04_HomePage us004=new US04_HomePage(Driver.getDriver());
+    US_4Page us004=new US_4Page(Driver.getDriver());
 
     @Given("Kullanici Url ve login olur Account management tıklar")
     public void kullaniciUrlVeLoginOlurAccountManagementTıklar() {

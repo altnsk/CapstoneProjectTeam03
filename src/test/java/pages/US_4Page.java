@@ -10,13 +10,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class US04_HomePage {
+public class US_4Page {
+
     WebDriver driver;
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-    public US04_HomePage(WebDriver driver) {
+    public US_4Page(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
+
     }
 
     @FindBy (xpath = "(//td/span)[1]")
@@ -60,6 +62,7 @@ public class US04_HomePage {
 
         accountmanagement.click();
         businessOwner.click();
+
     }
 
     public void edit(){
