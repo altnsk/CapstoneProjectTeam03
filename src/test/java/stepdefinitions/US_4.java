@@ -11,9 +11,11 @@ import utilities.Driver;
 
 
 public class US_4 {
-    WebDriver driver;
-    Homepage us04=new Homepage(Driver.getDriver());
-    US_4Page us004=new US_4Page(Driver.getDriver());
+    //WebDriver driver;
+    //Homepage us04=new Homepage();
+    Homepage us04=new Homepage();
+
+    US_4Page us004=new US_4Page();
 
     @Given("Kullanici Url ve login olur Account management tıklar")
     public void kullaniciUrlVeLoginOlurAccountManagementTıklar() {

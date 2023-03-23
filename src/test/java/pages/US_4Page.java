@@ -7,17 +7,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.Driver;
 
 import java.time.Duration;
 
 public class US_4Page {
 
-    WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
-    public US_4Page(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver,this);
+    public US_4Page() {
+
+        PageFactory.initElements(Driver.getDriver(),this);
 
     }
 
