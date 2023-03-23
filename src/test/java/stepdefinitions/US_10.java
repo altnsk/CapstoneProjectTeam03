@@ -18,6 +18,7 @@ public class US_10 {
         Driver.getDriver().get("https://qa-gm3.quaspareparts.com/");
 
         hp.login();
+        ru.login2.click();
     }
 
     @When("Kullanici  Business Owner a tiklar")
